@@ -153,8 +153,8 @@ class ChartPane(irisList: List<Iris>) : JFrame() {
 
         chartData.removeSeries(line)
         line.clear()
-//        line.add(startX, startY)
-//        line.add(endX, endY)
+        line.add(startX, startY)
+        line.add(endX, endY)
 
         chartData.addSeries(line)
         val linePlot: XYPlot = chart.xyPlot
